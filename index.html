@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <main>
+        <div class = "grid-container">
+        <!-- Input Form  -->
+            <section class="searchByCity">
+                <h1>Weather App</h1>
+                <form id="cityEntryForm">
+                    <label for="cityName">Enter a location by city</label>
+                    <input id="cityName" type="text" size="20" autocomplete="off" 
+                    placeholder="Enter City" tabindex="0"/>
+                    <button id="searchCity" class="button" title="Get weather for city" 
+                    aria-label="Search for weather by city name" tabindex="0">Search</button>
+                    <button id="saveLocation" class="button" title="Make My Location" 
+                    aria-label="Make this location your default" tabindex="0">Save</button>
+                </form>
+            </section>
+
+            
+            <section class="location-Container">
+                <div class = "location-wrapper">
+                    <div id = "locWeatherIcon"></div>
+                    <div id="location-Name"></div>
+                </div> 
+                <div id="location-Details">
+                    <div id ="localHiLo"></div>
+                    <div id= "feels_like"></div>
+                    <div id = "location-Humidity"></div>
+                    
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

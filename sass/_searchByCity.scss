@@ -1,0 +1,45 @@
+.searchByCity {
+
+    h1 {
+        color: #fff;
+        text-align: center;
+    }
+    
+    form{
+        padding-top: 15px;
+        display: flex;
+        justify-content: space-around;
+
+        label {
+            position: absolute;
+            left: -10000px;
+        }
+
+        input {
+            width: 70%;
+            font-size: 1.25rem;
+            border: 2px solid #000;
+            border-radius: 20px;
+            padding-left: 10px;
+            outline: none;
+        }
+        
+        input:hover,
+        input:focus {
+            box-shadow: 2px 2px 1px $standard-font-color;
+        }
+
+        #searchCity {
+            background-color: $searchbttn-bg-color;
+            color: $searchbttn-font-color;
+            font-size: 1rem;
+            margin: 0 10px;
+        }
+
+        #saveLocation {
+            background-color: $green-icon-color;
+            color: #F9F9F9;
+            font-size: 1rem;
+        }
+    }
+}

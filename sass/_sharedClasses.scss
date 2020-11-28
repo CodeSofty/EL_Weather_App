@@ -1,0 +1,23 @@
+$searchbttn-bg-color: #195EE4;
+$searchbttn-font-color: #EAF1FF;
+$savebttn-bg-color: #7E42FF;
+$savebttn-font-color: #CFB8FF;
+
+.button {
+    border: none;
+    width: 5rem;
+    min-width: 2rem;
+    height: 2rem;
+    min-height: 2rem;
+    border-radius: 20px;
+    outline: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    filter: brightness(120%);
+}

@@ -1,0 +1,16 @@
+
+.grid-container {
+    display: grid;
+	grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+
+.searchByCity {
+    grid-row: 1;
+    grid-column: 1/5;
+}
+
+.location-Container {
+    grid-row: 2;
+    grid-column: 1/5;
+}
