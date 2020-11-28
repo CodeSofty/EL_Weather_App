@@ -1,0 +1,57 @@
+
+// Variables
+
+$base-color: #1F2129;
+$standard-font-color: #B1B2B7;
+$light-background-color: #272C39;
+$light-font-color: #898B92;
+$green-icon-color: #4CD99B;
+$green-icon-bg: #316B5C;
+$purple-icon-color: #6B6BF0;
+$purple-icon-bg: #3F4078;
+$info-border-color: #343745;
+$searchbttn-bg-color: #195EE4;
+$searchbttn-font-color: #EAF1FF;
+$savebttn-bg-color: #7E42FF;
+$savebttn-font-color: #CFB8FF;
+
+
+// Mixins
+
+@mixin mq($size) {
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}
+
+// Base Styling
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif, arial;
+    color: $standard-font-color;
+    width: 100%;
+    min-height: 100%;
+    // tablet size
+    @include mq(768px) {
+        font-size: 22px;
+    }
+}
+
+body {
+    margin: auto;
+    width: 80%;
+    background-color: black;
+}
+
+section {
+    background-color: $base-color;
+    padding: 20px;
+}

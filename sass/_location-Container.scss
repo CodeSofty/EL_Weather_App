@@ -1,8 +1,10 @@
 .location-Container {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-size: 1rem;
+
 
     .location-wrapper {
         margin: auto;
@@ -18,7 +20,7 @@
     }
 
     #location-Details {
-        margin-top: 1.5rem;
+        margin-top: .5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
